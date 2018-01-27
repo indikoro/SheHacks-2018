@@ -1,0 +1,40 @@
+.granimate {
+  background-color: #c0d6e3;
+  animation: hue 11s linear 0s infinite reverse;
+}
+.granimate::before {
+  background: linear-gradient(105deg, rgba(255, 190, 0, 0), #cdc1d7);
+  animation: hue 12s linear 1s infinite;
+}
+
+@keyframes hue {
+  to {
+    filter: hue-rotate(1turn);
+  }
+}
+
+.full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+/*
+.full::before {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+ .full::after {
+  position: relative;
+  text-align: center;
+} 
+*/
+
+body {
+  margin: 0;
+}
