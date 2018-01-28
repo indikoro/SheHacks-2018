@@ -44,6 +44,29 @@ body {
     outline: none;
 }
 
+.feelbtn-2 {
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 3vw;
+    border-radius: 15px;
+    padding: 15px 30px 15px 30px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #ffbdec;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.feelbtn-2:hover, .feelbtn-2:focus {
+}
+
+.feelbtn-2 a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+
     /* Grow */
 .hvr-grow {
   display: inline-block;
@@ -85,4 +108,19 @@ body {
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
   background-color: #2098D1;
   color: white;
+}
+
+fieldset {
+    outline: none;
+    border: none;
+}
+
+input, textarea {
+    border-radius: 14px;
+    padding: 4%;
+    font-size: 2vw;
+    font-family: 'Raleway', sans-serif;
+    border: 0px;
+    display: block;
+    margin: auto;
 }
