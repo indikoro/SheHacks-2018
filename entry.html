@@ -5,15 +5,28 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Nunito:900|Raleway" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="background-animate.css">
-        <link rel="stylesheet" type="text/css" href="default.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<!--        <link rel="stylesheet" type="text/css" href="background-animate.css">-->
+        <link rel="stylesheet" type="text/css" href="/default.css">
+<!--       <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
+<!--       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>-->
     </head>
     <body>
-        <form>
-            <textarea rows="15%" cols="50%" name="comment" form="usrform">
-            Enter text here...</textarea><br>
-            <input type="submit">
+        <form id="submittedEntries">
+           <fieldset>
+                <label for="username">Username </label>
+                <input name="username" id="username" type="text" placeholder="Username">
+                <br>
+                <label for="date">Date</label>
+                <input name="date" id="date" type="text" placeholder="MMDDYYYY">
+                <textarea name="entry" id="entry" type="text" rows="15%" cols="50%">
+                </textarea>
+                <br>
+            </fieldset>
+            <button type="submit">Submit</button>
         </form>
+        <div id="results"></div>
+        <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+        <script src="main.js"></script>
     </body>
+<!--        <script type="text/javascript" src="submitcode.js"> </script>-->
 </html>
