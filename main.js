@@ -11,6 +11,7 @@
 
 // Reference messages collection
 var messagesRef = firebase.database().ref('messages');
+var submittedAPIsRef = firebase.database().ref('submittedAPIs');
 
 // Listen for form submit
 document.getElementById('submittedEntries').addEventListener('submit', submitForm);
@@ -26,6 +27,7 @@ function submitForm(e) {
     
 // Save message
     saveMessage(username, date, entry);
+    saveSubmittedAPI(username, date, entry);
 }
 
 // Function to get form values
@@ -43,3 +45,11 @@ function saveMessage(username, date, entry) {
     });
 }
 
+function saveSubmittedAPI(username, date, entry) {
+    var newSubmittedAPIRef = submittedAPIsRef.push();
+    newSubmittedAPIRef.set({
+        username:username,
+        date:date,
+        entry:entry
+    })
+}
